@@ -1,0 +1,10 @@
+TEST_NUMBER:
+n -> int
+MAX_TIME:
+float x n
+POINTS_PER_GROUP:
+int x n
+TEST_RESULT:
+text x n
+SCORE:
+int
