@@ -4,10 +4,10 @@
 W katalogu **WDI** należy znaleźć interesujący nas zestaw oraz zadanie. Następnie w tym katalogu umieścić kod w pliku o nazwie **prog.py**
 i uruchomić plik core.py. Wynik sprawdzenia znajdzie się w pliku DATA.txt w katalogu z zadaniem.
 
-Przykładowo aby sprawdzić zadanie 7 z zestawu 2 należy w pliku **./WDI/Set_2/Task_7/prog.py** umieścić kod, a następnie w pliku
-**./WDI/Set_2/Task_7/DATA.txt** pojawi się aktualna punktacja za zadanie.
+Przykładowo aby sprawdzić zadanie 7 z zestawu 2 należy w pliku **./WDI/Set_2/Task_7/prog.py** umieścić kod, a następnie w pliku po uruchomieniu
+**core.py** w pliku **./WDI/Set_2/Task_7/DATA.txt** pojawi się aktualna punktacja za zadanie.
 
-Sprawdzić można jednocześnie wiele zadań. Jeżeli plik **prog.py** jest nowszy niż **DATA.txt**, to automatycznie sprawdzi wszystkie 
+Sprawdzić można jednocześnie wiele zadań. Jeżeli plik **prog.py** jest nowszy niż **DATA.txt**, to **core.py** automatycznie sprawdzi wszystkie 
 zaktualizowane wersje dodanych rozwiązań zadań.
 
 -> Do zrobienia: Generowanie friendly user raportów ze sprawdzeń
