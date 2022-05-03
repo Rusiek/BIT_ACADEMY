@@ -10,8 +10,6 @@ Przykładowo aby sprawdzić zadanie 7 z zestawu 2 należy w pliku **./WDI/Set_2/
 Sprawdzić można jednocześnie wiele zadań. Jeżeli plik **prog.py** jest nowszy niż **DATA.txt**, to **core.py** automatycznie sprawdzi wszystkie 
 zaktualizowane wersje dodanych rozwiązań zadań.
 
--> Do zrobienia: Generowanie friendly user raportów ze sprawdzeń
-
 ## Dodawanie własnych testów
 Aby dodać testy do zadania należy utworzyć plik rozpoznawalny przez framework **pytest** w katalogu z zadaniem, a następnie
 utowrzyć odpowiednie klasy testów. Program **core.py** automatycznie znajdzie liczbę plików z testami i następnie uruchomi
