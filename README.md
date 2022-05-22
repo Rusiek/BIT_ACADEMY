@@ -15,7 +15,7 @@ Aby dodać testy do zadania należy utworzyć plik rozpoznawalny przez framework
 utowrzyć odpowiednie klasy testów. Program **core.py** automatycznie znajdzie liczbę plików z testami i następnie uruchomi
 każdy z nich uwzględniając limity czasowe załączone w pliku **DATA.txt**.
 
-## DATA.txt
+### DATA.txt
 Plik zawierający krótką informację o testach oraz wyniku sprawdzenia:
 
 ### TEST_NUMBER:
