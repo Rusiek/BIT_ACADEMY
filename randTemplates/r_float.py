@@ -1,5 +1,6 @@
 from random import random
 
+
 class r_float():
     DIG_NUM = 6
 
