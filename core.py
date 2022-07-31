@@ -133,7 +133,7 @@ def run_all_tests():
                 data_source = "{}{}{}".format(path, os.sep, data[0])
                 test_source = ["{}{}{}".format(path, os.sep, i) for i in test]
 
-                if os.path.getmtime(prog_source) > os.path.getmtime(data_source):
+                if True: #os.path.getmtime(prog_source) > os.path.getmtime(data_source):
                     output = prog_source.rsplit("\\")[2:4]
                     print(f"Checking {output[1]} from {output[0]}")
                     run_unit_test(data_source, test_source)
