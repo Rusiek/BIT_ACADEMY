@@ -1,6 +1,6 @@
-from io import StringIO
-from .randTemplates.r_float import *
 import sys
+from .randTemplates.RFloat import RFloat
+from io import StringIO
 
 
 class Capturing(list):
@@ -20,7 +20,7 @@ def prepare(data, float_type):
         for i in range(len(data)):
             data[i] = data[i].rsplit(" ")
             for j in range(len(data[i])):
-                data[i][j] = str(r_float.print(data[i][j]))
+                data[i][j] = str(RFloat.print(data[i][j]))
             data[i] = "".join(data[i])
     output = data
     if len(data) > 1:

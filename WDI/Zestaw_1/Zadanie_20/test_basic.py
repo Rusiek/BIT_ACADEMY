@@ -1,12 +1,11 @@
 # Szymon Rusiecki
 import pytest
-from random import randint
 from ....readstdout import checkstdout
-from ....randTemplates.r_float import *
 from .prog import f as user_sol
 from .sol import f as corr_sol
+from random import randint
 
-basicTests = [
+BASIC_TESTS = [
     (0, 0),
     (1, 2),
     (1, 10),
@@ -21,19 +20,19 @@ basicTests = [
 MIN_RANGE = 0
 MAX_RANGE = 1000
 TEST_NUM = 90
-basicTestsRandom = [
+BASIC_RANDOM_TESTS = [
     (randint(MIN_RANGE, MAX_RANGE),
      randint(MIN_RANGE, MAX_RANGE))
     for _ in range(TEST_NUM)]
 
 
 @pytest.mark.order(1)
-@pytest.mark.dependency(name="testBasic", scope="session")
+@pytest.mark.dependency(name="testBasic_s1z20", scope="session")
 class TestBasic:
-    @pytest.mark.parametrize("data", basicTests)
-    def testBasic(self, data):
+    @pytest.mark.parametrize("data", BASIC_TESTS)
+    def test_basic(self, data):
         assert checkstdout(user_sol, corr_sol, data, float_type=True)
 
-    @pytest.mark.parametrize("data", basicTestsRandom)
-    def testBasicRandom(self, data):
+    @pytest.mark.parametrize("data", BASIC_RANDOM_TESTS)
+    def test_basic_random(self, data):
         assert checkstdout(user_sol, corr_sol, data, float_type=True)
