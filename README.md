@@ -1,4 +1,4 @@
-# WDI_tester
+# Testerka na WDI
 
 ## Organizacja plików i sprawdzanie rozwiązań
 W katalogu **WDI** należy znaleźć interesujący nas zestaw oraz zadanie. Następnie w tym katalogu umieścić kod w pliku o nazwie **prog.py**
